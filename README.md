@@ -46,6 +46,8 @@ Before you download them, create a new folder named "ObjectDetection" on your De
 
 - This repository
 
+(You can delete the */doc* folder, it contains the images for this README only)
+
 Your ObjectDetection folder should look like this:
 
 <img src="https://github.com/Khaivdo/How-to-train-an-Object-Detector-using-Tensorflow-API-on-Linux/blob/master/doc/Directory1.png" height="350" width="550">
@@ -55,8 +57,8 @@ If you want to practice training your own object detector based on my dataset, y
 
 If you want to train your own object detector from scratch, you need to delete:
 
-- All the files in *ObjectDetection/data/test* and *ObjectDetection/data/train*
-- All the files in *ObjectDetection/training*
+- All the files in */ObjectDetection/data/test* 
+- All the files in */ObjectDetection/data/train*
 
 This tutorial will assume that all the files listed above were deleted, and will go on to explain how to generate the files for your own training dataset.
 
@@ -105,7 +107,7 @@ You can test that you have correctly installed the Tensorflow Object Detection A
 
 The result should look similar like this:
 
-<img src="https://github.com/Khaivdo/How-to-train-an-Object-Detector-using-Tensorflow-API-on-Linux/blob/master/doc/CompleteInstallation.png" height="130" width="550">
+<img src="https://github.com/Khaivdo/How-to-train-an-Object-Detector-using-Tensorflow-API-on-Ubuntu-16.04-GPU/blob/master/doc/CompleteInstallation.png" height="130" width="550">
 
 Note: These steps folllow [installation page](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/installation.md) but I faced some errors relating to dependent packages at later steps so I decided to re-write it.
 
@@ -133,7 +135,7 @@ Note: These steps folllow [installation page](https://github.com/tensorflow/mode
   After gathering images, you will need to install [labelImg](https://github.com/tzutalin/labelImg) to annotate them. 
     Once you have labeled and saved each image, there will be an equivalent .xml file for each of them in the same directory.
  
-  <img src="https://github.com/Khaivdo/How-to-train-an-Object-Detector-using-Tensorflow-API-on-Linux/blob/master/doc/labelImg1.png" height="480" width="800">
+  <img src="https://github.com/Khaivdo/How-to-train-an-Object-Detector-using-Tensorflow-API-on-Ubuntu-16.04-GPU/blob/master/doc/labelImg1.png" height="480" width="800">
  
  
 ### 2.3 Create label map ###
@@ -174,7 +176,7 @@ These .csv files will then be used to generate .record files which serve as inpu
     
 #### 2.4.2 Generate .record file ####
     
-- You can update row_labels below to meet your need:
+- Open the generate_tfrecord.py file then you can update row_labels below to meet your need:
 
       # TO-DO replace this with label map
       def class_text_to_int(row_label):
@@ -203,7 +205,7 @@ These .csv files will then be used to generate .record files which serve as inpu
 
 ### 2.5 Configure the Object Detection Training Pipeline ###
 
-Open the .config file in *ObjectDetection/training* and change the number of desired objecst that you have, directory paths to pre-trained model, .record files and your label_map. Num_examples is the number of images that you put in the *ObjectDetection/data/test* directory.
+Navigate to C:\tensorflow1\models\research\object_detection\samples\configs and copy the faster_rcnn_inception_v2_coco.config file into the *Object_detection\training* directory.Open the .config file and change the number of desired objecst that you have, directory paths to pre-trained model, .record files and your label_map. Num_examples is the number of images that you put in the *ObjectDetection/data/test* directory. 
 
 - *10* |   num_classes: 3
 - *107* |  fine_tune_checkpoint: "/home/james/Desktop/ObjectDetection/faster_rcnn_inception_v2_coco_2018_01_28/model.ckpt"
@@ -241,20 +243,20 @@ You will need to copy and paste the http link to a browser to open your Tensorbo
 The most important graphs that you should look for are total_loss graph, loss_1 graph and mAP graphs. 
 
 
-<img src="https://github.com/Khaivdo/How-to-train-an-Object-Detector-using-Tensorflow-API-on-Linux/blob/master/doc/loss_1.png" height="280" width="350">
+<img src="https://github.com/Khaivdo/How-to-train-an-Object-Detector-using-Tensorflow-API-on-Ubuntu-16.04-GPU/blob/master/doc/Loss_1.png" height="280" width="350">
 
 
-<img src="https://github.com/Khaivdo/How-to-train-an-Object-Detector-using-Tensorflow-API-on-Linux/blob/master/doc/total_loss.png" height="280" width="350">
+<img src="https://github.com/Khaivdo/How-to-train-an-Object-Detector-using-Tensorflow-API-on-Ubuntu-16.04-GPU/blob/master/doc/Total_loss.png" height="280" width="350">
 
-As you can see, after step 19k, my loss_1 stayed steadily at around 0.04 and my total_loss started to increase back. Therefore, I stopped my training process and check the [mAP](https://medium.com/@jonathan_hui/map-mean-average-precision-for-object-detection-45c121a31173) graphs.
+As you can see, after step 22k, my loss_1 stayed steadily at around 0.05 and my total_loss started to increase back. Therefore, I stopped my training process and check the [mAP](https://medium.com/@jonathan_hui/map-mean-average-precision-for-object-detection-45c121a31173) graphs.
 
 
 Total mAP (mean average precision):
 
 
-<img src="https://github.com/Khaivdo/How-to-train-an-Object-Detector-using-Tensorflow-API-on-Linux/blob/master/doc/mAP1.png" height="250" width="650">
+<img src="https://github.com/Khaivdo/How-to-train-an-Object-Detector-using-Tensorflow-API-on-Ubuntu-16.04-GPU/blob/master/doc/mAPs.png" height="250" width="650">
 
-The mAPs that I got are pretty good, above 91% for different IoU. Now it is time to export our inference graph and see how the model works.
+The mAPs that I got are pretty good, above 93% for different IoU. Now it is time to export our inference graph and see how the model works.
 
 
 ## 4 Export trained inference graph
@@ -276,7 +278,7 @@ If everything is working properly, the object detector will initialize for a few
 You also can test the newly trained Object Detector on images and videos. The outputs will then be saved in ObjectDetection directory.
 
 <p align="center">
-  <img src="https://github.com/Khaivdo/How-to-train-an-Object-Detector-using-Tensorflow-API-on-Linux/blob/master/doc/output1.png" height="650" width="600">
+  <img src="https://github.com/Khaivdo/How-to-train-an-Object-Detector-using-Tensorflow-API-on-Ubuntu-16.04-GPU/blob/master/doc/output1.png" height="650" width="600">
 </p>
 
 If you encounter errors, please check out the Common errors below. They were errors that I ran in to while setting up my object detection classifier. You are also encouraged to find solutions for errors on Google. There is usually useful information on Stackoverflow or in TensorFlow’s Issues on GitHub.
@@ -303,9 +305,9 @@ If you installed tensorflow-gpu by conda, then remove it as well because it can 
 
 *tensorflow.python.framework.errors_impl.InvalidArgumentError: assertion failed: [Unable to decode bytes as JPEG, PNG, GIF, or BMP]*
   
-Delete all images that Image Viewer cannot load (and their .xml files if you already annotated them) in your data directories. labelImg can load some images that your Image Viewer can't which normally we don't pay much attention on. 
+Delete all images that Image Viewer cannot load (and their .xml files if you already annotated them) in your data directories. (Note: labelImg can load some images that your Image Viewer can't). 
 
-<img src="https://github.com/Khaivdo/How-to-train-an-Object-Detector-using-Tensorflow-API-on-Linux/blob/master/doc/JPGimage.png" height="100" width="200">
+<img src="https://github.com/Khaivdo/How-to-train-an-Object-Detector-using-Tensorflow-API-on-Ubuntu-16.04-GPU/blob/master/doc/JPGimage.png" width="200">
 
 
 **None has type NoneType**
