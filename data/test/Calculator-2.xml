@@ -1,0 +1,26 @@
+<annotation>
+	<folder>train</folder>
+	<filename>Calculator-2.JPG</filename>
+	<path>/home/james/Desktop/ObjectDetection/data/train/Calculator-2.JPG</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>4032</width>
+		<height>3024</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Calculator</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>427</xmin>
+			<ymin>923</ymin>
+			<xmax>3712</xmax>
+			<ymax>2554</ymax>
+		</bndbox>
+	</object>
+</annotation>
