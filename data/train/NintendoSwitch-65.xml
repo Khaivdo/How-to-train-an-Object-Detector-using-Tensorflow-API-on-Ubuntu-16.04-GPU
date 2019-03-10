@@ -1,0 +1,26 @@
+<annotation>
+	<folder>test</folder>
+	<filename>NintendoSwitch-65.jpg</filename>
+	<path>/home/james/Desktop/ObjectDetection/data/test/NintendoSwitch-65.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>3024</width>
+		<height>4032</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>NintendoSwitch</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>328</xmin>
+			<ymin>2020</ymin>
+			<xmax>1720</xmax>
+			<ymax>3224</ymax>
+		</bndbox>
+	</object>
+</annotation>
