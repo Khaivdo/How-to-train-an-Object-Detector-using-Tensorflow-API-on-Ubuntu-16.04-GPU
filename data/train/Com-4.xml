@@ -1,0 +1,38 @@
+<annotation>
+	<folder>Untitled Folder</folder>
+	<filename>Com-4.jpg</filename>
+	<path>/home/james/Downloads/Untitled Folder/Com-4.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>4032</width>
+		<height>3024</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Calculator</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>2599</xmin>
+			<ymin>341</ymin>
+			<xmax>3543</xmax>
+			<ymax>2044</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Calculator</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>558</xmin>
+			<ymin>630</ymin>
+			<xmax>1525</xmax>
+			<ymax>2085</ymax>
+		</bndbox>
+	</object>
+</annotation>
