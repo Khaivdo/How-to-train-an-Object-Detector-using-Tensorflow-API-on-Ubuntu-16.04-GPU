@@ -1,0 +1,26 @@
+<annotation>
+	<folder>train</folder>
+	<filename>Basketball-54.jpg</filename>
+	<path>/home/james/Desktop/ObjectDetection/data/train/Basketball-54.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>421</width>
+		<height>600</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Basketball</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>274</xmin>
+			<ymin>46</ymin>
+			<xmax>322</xmax>
+			<ymax>103</ymax>
+		</bndbox>
+	</object>
+</annotation>
