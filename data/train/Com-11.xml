@@ -1,0 +1,50 @@
+<annotation>
+	<folder>Untitled Folder</folder>
+	<filename>Com-11.jpg</filename>
+	<path>/home/james/Downloads/Untitled Folder/Com-11.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>4032</width>
+		<height>3024</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Calculator</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>2654</xmin>
+			<ymin>589</ymin>
+			<xmax>3536</xmax>
+			<ymax>1815</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Calculator</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1865</xmin>
+			<ymin>741</ymin>
+			<xmax>2532</xmax>
+			<ymax>1904</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>NintendoSwitch</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>710</xmin>
+			<ymin>163</ymin>
+			<xmax>1791</xmax>
+			<ymax>1985</ymax>
+		</bndbox>
+	</object>
+</annotation>
