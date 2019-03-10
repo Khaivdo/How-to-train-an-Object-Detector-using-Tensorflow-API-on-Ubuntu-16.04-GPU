@@ -50,7 +50,7 @@ Before you download them, create a new folder named "ObjectDetection" on your De
 
 Your ObjectDetection folder should look like this:
 
-<img src="https://github.com/Khaivdo/How-to-train-an-Object-Detector-using-Tensorflow-API-on-Linux/blob/master/doc/Directory1.png" height="350" width="550">
+<img src="https://github.com/Khaivdo/How-to-train-an-Object-Detector-using-Tensorflow-API-on-Ubuntu-16.04-GPU/blob/master/doc/MainDirectory.png" height="350" width="550">
 
 
 If you want to practice training your own object detector based on my dataset, you can leave all the files as they are and skip steps 2.1, 2.2 and 2.3 below. 
