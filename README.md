@@ -2,7 +2,7 @@
 
 This repository is a tutorial for how to use TensorFlow's Object Detection API to train an object detection classifier for multiple objects on Ubuntu 16.04. 
 
-[![Watch the video](https://github.com/Khaivdo/How-to-train-an-Object-Detector-using-Tensorflow-API-on-Linux/blob/master/doc/Screenshot1.png)](https://youtu.be/6g1iT3wLYWU)
+[![Watch the video](https://github.com/Khaivdo/How-to-train-an-Object-Detector-using-Tensorflow-API-on-Ubuntu-16.04-GPU/blob/master/doc/Video1.png)](https://youtu.be/sFlbxXRum_0)
 
 ## 1. Installation ###
 
@@ -119,6 +119,9 @@ Note: These steps folllow [installation page](https://github.com/tensorflow/mode
   To train an accurate and robust object detection model, you need to gather a dataset of at least 200 images which have a large variations in backgrounds and lightings, random objects involving in images, position and pose of desired objects. I used around 80 images that each category stays on its own and another 50 images with multiple desired categories in the image to train my Object Detector. Using a dataset with a few images can cause your model to misdefine your desired objects or cannot detect your desired objects in different scenes.
 
   You can gather images of your objects from Google images or your own image albums.
+  
+  <img src="https://github.com/Khaivdo/How-to-train-an-Object-Detector-using-Tensorflow-API-on-Ubuntu-16.04-GPU/blob/master/doc/images.png" height="480" width="800">
+  
   
   After annotating your images, you can randomly divide your data into two different directories :
   
@@ -278,7 +281,7 @@ If everything is working properly, the object detector will initialize for a few
 You also can test the newly trained Object Detector on images and videos. The outputs will then be saved in ObjectDetection directory.
 
 <p align="center">
-  <img src="https://github.com/Khaivdo/How-to-train-an-Object-Detector-using-Tensorflow-API-on-Ubuntu-16.04-GPU/blob/master/doc/output1.png" height="650" width="600">
+  <img src="https://github.com/Khaivdo/How-to-train-an-Object-Detector-using-Tensorflow-API-on-Ubuntu-16.04-GPU/blob/master/doc/output1.png" height="500" width="500">
 </p>
 
 If you encounter errors, please check out the Common errors below. They were errors that I ran in to while setting up my object detection classifier. You are also encouraged to find solutions for errors on Google. There is usually useful information on Stackoverflow or in TensorFlow’s Issues on GitHub.
