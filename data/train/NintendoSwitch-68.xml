@@ -1,0 +1,26 @@
+<annotation>
+	<folder>train</folder>
+	<filename>NintendoSwitch-68.jpg</filename>
+	<path>/home/james/Desktop/ObjectDetection/data/train/NintendoSwitch-68.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>4032</width>
+		<height>3024</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>NintendoSwitch</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1109</xmin>
+			<ymin>1491</ymin>
+			<xmax>2862</xmax>
+			<ymax>2335</ymax>
+		</bndbox>
+	</object>
+</annotation>
