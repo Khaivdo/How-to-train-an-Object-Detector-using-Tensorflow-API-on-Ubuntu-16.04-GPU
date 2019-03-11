@@ -2,6 +2,8 @@
 
 This repository is a tutorial for how to use TensorFlow's Object Detection API to train an object detection classifier for multiple objects on Ubuntu 16.04. 
 
+(Click the image below to watch video)
+
 [![Watch the video](https://github.com/Khaivdo/How-to-train-an-Object-Detector-using-Tensorflow-API-on-Ubuntu-16.04-GPU/blob/master/doc/Video.png)](https://youtu.be/sFlbxXRum_0)
 
 ## 1. Installation ###
