@@ -276,7 +276,7 @@ Test your model using your webcam by issuing:
 
     python webcam.py
     
-If everything is working properly, the object detector will initialize for a few seconds and the result will be displayed.
+If everything is working properly, the object detector will initialize for a few seconds and the result will be displayed. To close your program, press "q" on your "object detection" window and your program will be terminated.
 
 You also can test the newly trained Object Detector on images and videos. The outputs will then be saved in ObjectDetection directory.
 
